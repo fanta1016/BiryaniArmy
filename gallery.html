@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Biryani Army</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍛</text></svg>" />
+</head>
+<body>
+
+<div class="wrapper">
+
+  <nav>
+    <a href="index.html" class="nav-logo" style="font-family:bur">🍛 BIRYANI ARMY</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="gallery.html" style="color:var(--cyan-bright);">Gallery</a></li>
+      <li><a href="index.html#join">Join Us</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#about" onclick="closeMobileMenu()">About</a>
+    <a href="gallery.html"     onclick="closeMobileMenu()">Gallery</a>
+    <a href="index.html#join"  onclick="closeMobileMenu()">Join Us</a>
+  </div>
+
+
+  <div class="gallery-page-hero">
+    <span class="section-eyebrow">Biryani Army Moments</span>
+    <h1 class="section-title" style="color:var(--white); text-shadow: 4px 4px 0 var(--cyan-darkest), 8px 8px 0 rgba(0,0,0,0.15);">
+      GALLERY
+    </h1>
+    <span class="section-title-underline"></span>
+    <br/>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+
+
+  <div class="section-stripe-white">
+    <div class="gallery-full">
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="Wallsock.png" alt="Gallery image 1" />
+          <p class="img-label">WallShock the lookMaxxer</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="Screenshot 2026-04-07 142710.png" alt="Gallery image 2" />
+          <p class="img-label">Shut Up Leo Kun😹</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="mono.png" alt="Gallery image 3" />
+          <p class="img-label">Stay away from a person named OhMono!</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="Screenshot 2026-04-07 142036.png" alt="Gallery image 4" />
+          <p class="img-label">OhMono Proposing Snowflake vity  </p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="Screenshot 2026-04-07 141146.png" alt="Gallery image 5" />
+          <p class="img-label">Horse the Clicky</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="Screenshot 2026-04-07 141744.png" alt="Gallery image 6" />
+          <p class="img-label">vitys ponda crashed</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="Screenshot 2026-04-07 142313.png" alt="Gallery image 7" />
+          <p class="img-label">April Foots</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="Screenshot 2026-04-07 142426.png" alt="Gallery image 8" />
+          <p class="img-label">Vro Did WHAT</p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">🍛 BIRYANI ARMY</p>
+      <p class="footer-credit">
+        &copy; <span id="footer-year">2019</span> Leo Kun's Biryani Army &nbsp;|&nbsp;
+        Made with <span class="heart">♥</span> love by <span class="name">Phany</span>
+      </p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="scripts.js"></script>
+<script>
+  const btn  = document.getElementById('hamburger');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => { btn.classList.toggle('open'); menu.classList.toggle('open'); });
+  function closeMobileMenu() { btn.classList.remove('open'); menu.classList.remove('open'); }
+</script>
+</body>
+</html>
